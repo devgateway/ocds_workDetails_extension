@@ -12,7 +12,7 @@ The "Work Details" extension will be a general field, which mean that will be at
 
 ```json
 {
-  "tender": {...}
+  "tender": {...},
   "workDetails": {
         "status": {
             "_id" : "2",
