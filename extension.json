@@ -5,13 +5,11 @@
   "description": {
     "en": "This extension will allow DNV to show more precise information about the general process regarding global status and type of management"
   },
-  "compatibility": [
-    "1.1"
-  ],
   "documentationUrl": {
     "en": "https://github.com/devgateway/ocds_workDetails_extension"
   },
-  "codelists": [
+  "compatibility": [
+    "1.1"
   ],
   "schemas": [
     "release-schema.json"

@@ -1,11 +1,30 @@
 {
+  "id": null,
+  "$schema": null,
+  "title": null,
+  "description": null,
+  "type": null,
   "properties": {
     "workDetails": {
       "title": "Work Details",
       "description": "The work details section is used to publish information about the global status and type of management of the contracting process.",
       "$ref": "#/definitions/WorkDetails"
-    }
+    },
+    "ocid": null,
+    "id": null,
+    "date": null,
+    "tag": null,
+    "initiationType": null,
+    "parties": null,
+    "buyer": null,
+    "planning": null,
+    "tender": null,
+    "awards": null,
+    "contracts": null,
+    "language": null,
+    "relatedProcesses": null
   },
+  "required": null,
   "definitions": {
     "workDetailsStatus": {
       "title": "Work Details Status",
@@ -25,7 +44,7 @@
           "title": "Description",
           "description": "The description of the status",
           "type": "string"
-        },
+        }
       }
     },
     "workDetailsType": {
@@ -46,7 +65,7 @@
           "title": "Description",
           "description": "The description of the status",
           "type": "string"
-        },
+        }
       }
     },
     "WorkDetails": {
@@ -71,6 +90,26 @@
           }
         }
       }
-    }
+    },
+    "Planning": null,
+    "Tender": null,
+    "Award": null,
+    "Contract": null,
+    "Implementation": null,
+    "Milestone": null,
+    "Document": null,
+    "Budget": null,
+    "Transaction": null,
+    "OrganizationReference": null,
+    "Organization": null,
+    "Item": null,
+    "Amendment": null,
+    "Classification": null,
+    "Identifier": null,
+    "Address": null,
+    "ContactPoint": null,
+    "Value": null,
+    "Period": null,
+    "RelatedProcess": null
   }
 }
