@@ -10,5 +10,10 @@
   ],
   "documentationUrl": {
     "en": "https://github.com/devgateway/ocds_workDetails_extension"
-  }
+  },
+  "codelists": [
+  ],
+  "schemas": [
+    "release-schema.json"
+  ]
 }
