@@ -14,11 +14,11 @@ The "Work Details" extension will be a general field, which mean that will be at
 {
   "workDetails": {
         "status": {
-            "_id" : "2",
+            "id" : "2",
             "description" : "Finalizada"
         },
         "type": {
-            "_id" : "5",
+            "id" : "5",
             "description" : "Mantenimiento"
         }
     }
