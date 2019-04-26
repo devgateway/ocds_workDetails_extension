@@ -1,0 +1,76 @@
+{
+  "properties": {
+    "workDetails": {
+      "title": "Work Details",
+      "description": "The work details section is used to publish information about the global status and type of management of the contracting process.",
+      "$ref": "#/definitions/WorkDetails"
+    }
+  },
+  "definitions": {
+    "workDetailsStatus": {
+      "title": "Work Details Status",
+      "description": "The current global status of the contracting process, it can vary when the contract reach a new phase",
+      "type": "object",
+      "required": [
+        "id",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "title": "ID",
+          "description": "An internal identifier for this item.",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "The description of the status",
+          "type": "string"
+        },
+      }
+    },
+    "workDetailsType": {
+      "title": "Work Details Type",
+      "description": "The current global status of the contracting process",
+      "type": "object",
+      "required": [
+        "id",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "title": "ID",
+          "description": "An internal identifier for this item.",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "description": "The description of the status",
+          "type": "string"
+        },
+      }
+    },
+    "WorkDetails": {
+      "title": "Work Details",
+      "description": "The work details section is used to publish information about the global status and type of management of the contracting process.",
+      "type": "object",
+      "properties": {
+        "status": {
+          "title": "Status",
+          "description": "Global status of a contracting process",
+          "type": "object",
+          "items": {
+            "$ref": "#/definitions/workDetailsStatus"
+          }
+        },
+        "type": {
+          "title": "Management type",
+          "description": "Type of management for a contracting process",
+          "type": "object",
+          "items": {
+            "$ref": "#/definitions/workDetailsType"
+          }
+        }
+      }
+    }
+  }
+}
